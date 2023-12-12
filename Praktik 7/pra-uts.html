@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form</title>
+</head>
+<body>
+    <h3 align="center">MAHASISWA SI01 STTNF</h3>
+    <h4 align="center">
+        <a href="">Home > </a>
+        <a href="">Mahasiswa > </a>
+        <a href="">Daftar </a>
+    </h4>
+    <div style="text-align: center;">
+        Cari Nama Mahasiswa:
+        <input type="text" name="search" placeholder="Search" style="border-radius: 10px; border:1px solid black">
+        <img src="gambar/magnifier.png" alt="" width="15">
+    </div>
+    <br>
+    <div style="background-color: black; color: white; height: 50px;">
+        <table align="center" cellpadding="15px">
+            <tr>
+                <td>Daftar Karyawan</td>
+                <td>Master Data</td>
+                <td>Tambah Data</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- fieldset & legend -->
+    <fieldset>
+        <legend>Formulir Daftar STTNF</legend>
+        <div style="display: flex;">
+            <!-- asside -->
+            <aside style="margin-left: 150px;">
+                <form action="" method="POST">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" name="name" placeholder="Enter Name"></td>
+                        </tr>
+                        <tr>
+                            <td>Desc:</td>
+                            <td><textarea name="description" placeholder="Enter Description" cols="30" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Hoby:</td>
+                            <td>
+                                <select>
+                                    <option value="bola">Bola Bekel</option>
+                                    <option value="basket">Basket</option>
+                                    <option value="tenis">Tenis</option>
+                                    <option value="baca">Baca</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Transaksi:</td>
+                            <td>
+                                <input type="checkbox" name="permit" value="mobile">Phone
+                                <input type="checkbox" name="permit" value="email">Email
+                                <input type="checkbox" name="permit" value="ewallet">E Wallet
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin:</td>
+                            <td>
+                                <input type="radio" name="jk" value="l">Lanang
+                                <input type="radio" name="jk" value="p">Wadon
+                                <input type="radio" name="jk" value="lw">LanangWadon
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Umur:</td>
+                            <td><input type="number" name="umur" min="1"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" name="email" placeholder="Enter Email"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal:</td>
+                            <td><input type="date" name="tgl"></td>
+                        </tr>
+                        <tr>
+                            <td>Web:</td>
+                            <td><input type="text" name="web" placeholder="http://"></td>
+                        </tr>
+                        <tr>
+                            <td>Upload:</td>
+                            <td><input type="file" name="upload"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="proses" value="Simpan" style="box-shadow: 4px 3px 2px black; background-color: blue; color:white;"></td>
+                            <td><input type="reset" name="unproses" value="Batal" style="box-shadow: 4px 3px 2px black; background-color: red; color:white;"></td>
+                        </tr>
+                    </table>
+            </aside>
+
+            <!-- article -->
+            <article  style="margin-left: 200px;">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" placeholder="Enter Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Desc:</td>
+                        <td><textarea name="description" placeholder="Enter Description" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Hoby:</td>
+                        <td>
+                            <select>
+                                <option value="bola">Bola Bekel</option>
+                                <option value="basket">Basket</option>
+                                <option value="tenis">Tenis</option>
+                                <option value="baca">Baca</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transaksi:</td>
+                        <td>
+                            <input type="checkbox" name="permit" value="mobile">Phone
+                            <input type="checkbox" name="permit" value="email">Email
+                            <input type="checkbox" name="permit" value="ewallet">E Wallet
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin:</td>
+                        <td>
+                            <input type="radio" name="jk" value="l">Lanang
+                            <input type="radio" name="jk" value="p">Wadon
+                            <input type="radio" name="jk" value="lw">LanangWadon
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Umur:</td>
+                        <td><input type="number" name="umur" min="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" placeholder="Enter Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal:</td>
+                        <td><input type="date" name="tgl"></td>
+                    </tr>
+                    <tr>
+                        <td>Web:</td>
+                        <td><input type="text" name="web" placeholder="http://"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload:</td>
+                        <td><input type="file" name="upload"></td>
+                    </tr>
+                </table>
+                </form>
+            </article>
+        </div>
+        <hr>
+        <main style="display: flex;">
+            <div>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <img width="200px" src="gambar/naruto1.jpg" alt="">
+                    <br>
+                    <input type="file" name="foto" placeholder="upload foto">
+                </form>
+            </div>
+            <div>
+                <p align="center">Cerita</p>
+                <p align="justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, id eaque at cum dolorem excepturi nesciunt iusto quisquam pariatur quia facilis corrupti nulla officia voluptas ducimus laboriosam rem esse! Voluptates?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus doloribus voluptatum necessitatibus porro ullam, velit harum deserunt eos vitae dicta sint minima, unde perferendis enim delectus provident maxime repellat laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur amet temporibus. Deserunt iure numquam voluptates expedita, recusandae nisi assumenda asperiores error velit eligendi, quam doloremque dicta dolores, soluta odit!
+                </p>
+            </div>
+        </main>
+        <hr>
+        <footer style="display: flex; justify-content: space-evenly; background-color: greenyellow;">
+            <div>
+                <video width="300" height="200" controls>
+                    <source src="gambar/cats.mp4" type="video/mp4">
+                </video>
+            </div>
+            <fieldset>
+                <img src="gambar/naruto2.jpg" width="100" height="75" alt="">
+                <img src="gambar/beruang.jpg" width="100" height="75" alt="">
+                <br>
+                <img src="gambar/burung.jpg" width="100" height="75" alt="">
+                <img src="gambar/kucing.jpeg" width="100" height="75" alt="">
+            </fieldset>
+            <fieldset>
+                <legend>Lampiran</legend>
+                <a href="gambar/naruto2.jpg" download="naruto2.jpg">download_naruto</a><br>
+                <a href="gambar/naruto2.jpg" download="naruto2.jpg">download_naruto</a><br>
+                <a href="gambar/naruto2.jpg" download="naruto2.jpg">download_naruto</a><br>
+                <a href="gambar/naruto2.jpg" download="naruto2.jpg">download_naruto</a>
+            </fieldset>
+        </footer>
+    </fieldset>
+</body>
+</html>
