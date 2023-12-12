@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.judul1{
+  padding: 30px 0;
+  background-color: orange;
+  font-family: Comic Sans MS;
+}
+.box{
+  float:right;
+}
+header ul{
+  float: right;
+}
+header ul li{
+  display: inline-block;
+}
+header ul li a{
+  padding: 25px 20px;
+  display: inline-block;
+}
+header ul li a:hover{
+  background-color: orange;
+  color: white;
+}
+.jpg{
+  padding: 120px 0;
+  float: right;
+}
+.judul2{
+  padding: 60px 0;
+}
+.judul3{
+  padding: 0px 350px;
+  color: black;
+}
+.dp{
+  padding: 30px 0;
+  background-color: orange;
+}
+.tk{
+  padding: 20px 0;
+}
+.tp{
+  padding: 20px 0;
+}

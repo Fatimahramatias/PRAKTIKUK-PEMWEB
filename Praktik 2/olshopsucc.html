@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Form Pemesanan Barang</title>
+  </head>
+  <style>
+  body {background-color:papayawhip;}
+  </style>
+  <body>
+    <h1>Samsung Galaxy S23 Ultra 5G</h1>
+    <img style="border-radius: 15px;" src="produk.jpg" width= "345" alt="Samsung Galaxy S23 Ultra 5G.">
+    <h3>Harga</h3>
+    <h1>Rp18.289.900</h1>
+    <br>
+    <hr>
+    <h4>Highlight Produk</h4>
+    <img style="border-radius: 12px;" src="produk1.jpg" width= "165" alt="Samsung Galaxy S23 Ultra 5G.">
+    <img style="border-radius: 12px;" src="produk2.jpg" width= "165" alt="Samsung Galaxy S23 Ultra 5G.">
+    <img style="border-radius: 12px;" src="produk3.jpg" width= "165" alt="Samsung Galaxy S23 Ultra 5G.">
+    <img style="border-radius: 12px;" src="produk4.jpg" width= "165" alt="Samsung Galaxy S23 Ultra 5G.">
+    <hr>
+    <h4>Varian Produk</h4>
+    <ul>
+      <li>Phantom</li>
+      <li>Cream</li>
+      <li>Green</li>
+      <li>Lavender</li>
+    </ul>
+    
+    <h4>Spesifikasi</h4>
+    <ul>
+<li>Processor : Snapdragon 8 Gen 2 (4nm)</li>
+<li>Size : 6,8”</li>
+<li>Technology : Dynamic AMOLED 2X, 1-120Hz</li>
+<li>Resolution : QHD+ (3088 x 1440) 500 ppi</li>
+<li>Rear Camera Resolution : 200.0 MP + 12.0 MP + 10.0 MP + 10.0 MP</li>
+<li>Main Camera Auto Focus : Yes</li>
+<li>Rear Camera - OIS : Yes</li>
+<li>Rear Camera - Zoom : 10x optical zoom, Digital Zoom up to 100x</li>
+<li>Front Camera Resolution : 12.0 MP<br>
+<li>Front Camera Auto Focus : No</li>
+<li>Video Resolution : UHD 8K (7680 x 4320) I @24fps</li>
+<li>RAM : 12 GB</li>
+<li>ROM : 256GB / 512GB/ 1TB</li>
+<li>SIM Tray : Dual-SIM</li>
+<li>Network Type :5G</li>
+<li>USB Interface : USB Type-C</li>
+<li>USB Version : USB Type-C 3.2</li>
+<li>Earjack : -</li>
+<li>Bluetooth Version : Bluetooth v5.3</li>
+<li>NFC : Yes</li>
+<li>Battery Capacity : 5000mAh, Super Fast Charging, Fast Wireless Charging 2.0, Reverse Wireless Charging</li>
+<li>Others : S pen support</li>
+  </ul>
+
+<h4>Pre-oder Now!</h4>
+<p>Anda dapat melalukan pemesan dengan melakukan pengisian data diri di bawah ini dan mengikuti intruksi paduan "Pre-order Samsung" pada laman website kami.</p>
+<p>Data Diri Pemesanan</p>
+   <form action="http://pre-order-handphone-samsung" method="post">
+     <form action="olshopsuc.html">
+     <table>
+        <tr>
+          <td>Nama lengkap : </td>
+          <td>
+            <input type="text" name="yourname">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Alamat : </td>
+          <td>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+          </td>
+        <tr>
+          <td>Telp:</td>
+          <td>
+            <input type="number" name="telephone">
+          </td>
+        </tr>
+         <tr>
+          <td>Email :</td>
+          <td>
+            <input type="email" name="email">
+          </td>
+        </tr>
+        <tr>
+    </table> 
+     <dt>Varian Produk (Pilihlah warna yang Anda ingingkan) :</dt>
+     <article>
+     <img style="border-radius: 12px;" src="black.jpg" width= "200" alt="Samsung Galaxy S23 Ultra 5G (Phantom)"><input type="checkbox" name="varian produk[]" value="Phantom">Phantom 
+       <br>
+    <img style="border-radius: 12px;" src="white.jpg" width= "200" alt="Samsung Galaxy S23 Ultra 5G (Crea.)"><input type="checkbox" name="varian produk[]" value="Cream">Cream
+       <br>
+    <img style="border-radius: 12px;" src="green.jpg" width= "200" alt="Samsung Galaxy S23 Ultra 5G (Green)"><input type="checkbox" name="varian produk[]" value="Green">Green
+       <br>
+    <img style="border-radius: 12px;" src="pink.jpg" width= "200" alt="Samsung Galaxy S23 Ultra 5G (Lavender)"> <input type="checkbox" name="varian produk[]" value="Lavender">Lavender
+       <br>
+    </article>
+    <br>
+     <dt>Pembayaran melalui</dt>
+      <label>Silakan pilih:</label>
+       <select name="metode">
+         <option value="Bank BRI">Bank BRI</option>
+         <option value="Bank BNI">Bank BNI</option>
+         <option value="Bank Mandiri">Bank Mandiri</option>
+         <option value="Bank Danamon">Bank Danamon</option></option>
+         <option value="Bank HSBC">Bank HSBC</option></option>
+         <option value="Bank BTN">Bank BTN</option>
+         <option value="Bank Syariah">Bank Syariah</option>
+       </select>
+       <br>
+       <br>
+       <tr>
+          <td>No. Rekening:</td>
+          <td>
+            <input type="number" name="nomor rekening">
+          </td>
+        </tr>
+       <br>
+       <br>
+       <input type="submit" value="Pre-order Now!">
+       <input type="Reset">
+    </form>
