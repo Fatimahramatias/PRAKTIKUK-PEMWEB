@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Hewan</title>
+</head>
+<body>
+    <h2>Gambar Hewan</h2>
+
+    <label for="pilihGambar"> Pilih gambar:</label>
+    <select id="pilihGambar" onchange="tampilGambar()">
+        <option value="gorila">Gorila</option>
+        <option value="babi">Babi</option>
+        <option value="singa">Singa</option>
+        <option value="kuda">Kuda</option>
+    </select>
+    <br>
+    <img src="gorila.jpg" id="gambarPilihan" alt="kosong" width="300">
+
+    <script>
+        function tampilGambar(){
+            let nilaiTerpilih = document.getElementById("pilihGambar").value;
+
+            //menampilkan gambar dengan pilihan menu dropdown dengan SwitchCase
+            switch (nilaiTerpilih){
+                case "gorila" : 
+                    gambarPilihan.src = "gorila.jpg";
+                break;
+                case "babi" : 
+                    gambarPilihan.src = "babi.jpg";
+                break;
+                case "singa" : 
+                    gambarPilihan.src = "singa.jpg";
+                break;
+                case "kuda" : 
+                    gambarPilihan.src = "kuda.jpg";
+                break;
+            }
+
+        }
+    </script>
+</body>
+</html>
